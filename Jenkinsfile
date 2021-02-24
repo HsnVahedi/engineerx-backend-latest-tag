@@ -1,4 +1,5 @@
 pipeline {
+    agent any
     parameters {
         string(name: 'BACKEND_VERSION', defaultValue: 'latest')
     }
