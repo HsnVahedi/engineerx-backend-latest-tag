@@ -18,7 +18,7 @@ pipeline {
                         integrationNginxImage.push("latest")
 
                         def localImage = docker.image("hsndocker/backend-local-nginx:${params.BACKEND_VERSION}")
-                        devImage.push("latest")
+                        localImage.push("latest")
 
                         def postgresImage = docker.image("hsndocker/backend-postgres:${params.BACKEND_VERSION}")
                         postgresImage.push("latest")
